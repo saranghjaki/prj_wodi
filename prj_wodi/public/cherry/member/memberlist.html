@@ -12,11 +12,16 @@
 		
 <title>stellar my html projects</title>
   	<style type= "text/css";>
+  		/* div{
+  			display:inline;
+  			/* display:block; */
+  		
+   */
   		a:link {	
   			color : red;
 			}
 		a:visited{
-			color : pink;
+			color :  brown;
 			}
 		a:hover{
 			color : red;
@@ -25,27 +30,38 @@
 			color : yellow;
 			}		
 		
-		tr, th, td{
-			
+		 tr, th{
+		  width:120px; 
+		
+		
 		}
 		
+		table{
+		 display:inline; 
 			
+		}
+			body{
+				font-family: 궁서; 
+		
+		}
+				
   	</style>
 
 <!-- css내용 -->
+	<center>
+	<div class="text-danger"><p class="fs-1">회원 리스트</p></div>
 
-	<span><p>회원리스트</p></span>
 </head>
 
-	<body>
+	<body style= "background-image:url(../../image/q.jpg); "  >
 		
-		<table class="table table-danger table-striped table-hover">
-		<tr>
-		 	<th width="40">NO</th>
-		 	<th width="60">ID</th>
-		 	<th width="80">이름</th>
-		 	<th width="80">생년월일</th>
-		 	<th width="50">성별</th>
+		<table  class="table table-danger table-striped table-hover ">
+		<tr width= "50px" style=" font-famiiy : 궁서;">
+		 	<th >NO</th>
+		 	<th ">ID</th>
+		 	<th >이름</th>
+		 	<th >생년월일</th>
+		 	<th >성별</th>
  		</tr>
 		
 		<tr>
@@ -87,7 +103,24 @@
 		 	<td>여성</td>
  		</tr>
 	</table>
-	<a href="./memberForm.html">등록</a>
+			<br>
+			<br>
+	
+		<div class="btn-toolbar mb-3 d-block"  role="toolbar" aria-label="Toolbar with button groups">
+		  <div class="btn-group me-2" role="group" aria-label="First group">
+		    <button type="button" class="btn btn-outline-danger">1</button>
+		    <button type="button" class="btn btn-outline-danger">2</button>
+		    <button type="button" class="btn btn-outline-danger">3</button>
+		    <button type="button" class="btn btn-outline-danger">4</button>
+		    <button type="button" class="btn btn-outline-danger">5</button>
+		  </div>
+	 
+		<br>
+	<br>
+	<a href="./memberForm.html" class="btn btn-danger btn btn opacity-75" role="button"
+		 data-bs-toggle="button" aria-pressed="true">등록</a>
+		</center>
 	</body>
+	
 	
 </html>
