@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>stellar my html projects</title>
+
+<!-- css내용 -->
+
+</head>
+
+	<body>
+	
+	memberEdit.html
+	
+	수정을 위한 폼
+	
+			
+	회원가입폼
+	
+	
+		
+				
+			<table border="1" height="850px" >
+			
+				 <tr>
+			 	<th width="200" colspan="2">ID </th>
+			 	<td width="300"colspan="2">
+			 		<form action="" method="get" id="id"name="id"enctype="multipart/form-data" >
+			 			<input type="text"id="id"name="id"maxlength="10" value="Mikey"> </td>
+			 			</form>
+		 		<td width="150" height="220px" rowspan="5"><img src="../../image/mini.png" width="200px">			 		
+		 		</td>
+		 	</tr>
+			
+			 <tr>	
+			 	<th colspan="2" rowspan="2">password </th>
+				<td colspan="2" height="44px"><form action="" method="get" id="password"name="password" enctype="multipart/form-data" >
+			 			<input type="password"id="password"name="password" placeholder="비밀번호 입력"maxlength="15" value="123456"> </td>
+			 			</form> </td>
+	  	  	 </tr>
+		  	 
+			 <tr>	
+			 	
+			 	
+			 	<td colspan="2" height="44px"><form action="" method="get" id="password"name="password"enctype="multipart/form-data" >
+			 			<input type="password"id="password"name="password" placeholder="비밀번호 재입력" value="123456"> </td>
+			 			</form> </td>
+	  	  	 </tr>
+		  	 
+			 <tr>
+			 	<th rowspan="3" height="44px">기본정보 </th>
+			 	<th>이름 </th>
+			 	<td colspan="2" ><form action="" method="get" id="name"name="name"enctype="multipart/form-data">
+			 			<input type="text"id="name"name="name"value="미키마우스"> </td>
+			 			</form> </td>				
+		  	
+		  	 </tr>
+		  	 
+			 <tr>
+			 	<th height="44px">생년월일 </th>
+			   	<td colspan="2">
+			   		<form action="" method="get" id="bir" name="bir"enctype="multipart/form-data">
+			   			<input type="date" id="bir" name="bir" value="2021-01-02" >
+			   		</form> </td>
+		  	 </tr>
+			
+			 <tr>
+			 	<th height="44px">성별 </th>
+			   	<td colspan="2">
+			   		<form action="" method="get" id="gender"name="gender" enctype="multipart/form-data">
+			   			<input type="radio" id="gender1" name="gender1" value="m" checked >남성
+			   			<input type="radio" id="gender2" name="gender2" value="W">여성
+			   		</form>
+			   	</td>
+		  	 	<td>	<form action="" method="get" id="file" name="file" enctype="multipart/form-data">
+						<input type ="file" id="file" name="file" accept=".gif, bmp, jpg, png">
+		 			</form></td>
+		  	 </tr>
+			
+			 <tr>
+			 	<th rowspan="3">상세정보 </th>
+			 	<th>주소 </th>
+			 	<td colspan="3">
+			 		<form action="" method="get" id="address" name="address"
+					enctype="multipart/form-data">
+					주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소 : <input type="text"
+						id="address1" name="address1" size="50px" placeholder="도로명주소 기입"
+						value="서울시 강남구 테헤란로1길 23"> <br>상세주소 : <input
+						type="text" id="address2" name="address2" size="50px"
+						placeholder="건물명 동 호수 기입" value="203호"> <br>우편번호 : <input
+						type="text" id="zipcode" name="zipcode" placeholder="00000(-없이기입)" value="02325">
+				</form>
+			</td>
+		 	</tr>
+		 	
+			 <tr>
+			 	<th>블로그 </th>
+			 	<td width="150px">
+			 		<form action="" method="get" id="blog" name="blog" enctype="multipart/form-data">
+			 			<input type="url" id="blog" name="blog" value="https://blod.naver.com/mini">
+			 		</form>
+			 	</td>
+			 	<th>인스타 </th>
+			 	<td >
+			 		<form action="" method="get" id="instar" name="instar" enctype="multipart/form-data">
+			 			<input type="text" id="instar" name="instar" value="minimouse">
+			 		</form>
+			 	</td>
+		 	</tr>
+			 <tr>
+			 	<th>직업 </th>
+			 	<td><form action="" method="get" id="jop" name="jop" enctype="multipart/form-data">
+					<select id="jop" name="jop">
+						<option>학생
+						<option>주부
+						<option selected>회사원
+						<option>자영업
+						<option>프리랜서
+						<option>기타
+						
+					</select>
+					</form>
+			 	</td>
+			 	
+			 	<th>국적 </th>
+			 	<td >
+			 		<form action=" method="get" id="nation" name="nation" enctype="multipart/form-data">
+		 				<input type="text"id="nation"name="nation" placeholder="예시)대한민국" value="대한민국">	
+						
+					
+			 		</form>
+			 	</td>
+		 	</tr>
+
+			 <tr>
+			 	<th rowspan="6">선택입력 </th>
+			 	<th rowspan="3">결혼유무 </th>
+			 	<th rowspan="2">
+			 		<form action="" method="get" id="wedding"name="gender" enctype="multipart/form-data">
+			   				기혼<input type="radio" id="wedding" name="wedding" value="" checked>
+			 		</form>
+			 	 </th>
+			 	<th>결혼기념일 </th>
+			 	<td >
+			 		<form action="" method="get" id="wd" name="wd" enctype=multipart/form>
+			 			<input type="date" id="date" name="date" value="2021-12-12">
+			 	</form>
+			 	</td>
+		 	</tr>
+		 	
+		
+		 	
+		 	 <tr>
+			 	<th >자녀수</th>
+			 	<td >
+			 		<form action="" method="get" id="wd2" name="wd2" enctype="multipart/form-data">
+						<input type="number" id="wd2" name="wd2" max="10" min="0" value="3">
+			 	</form>
+			 	</td>
+		 	</tr>
+		 	
+		 	
+
+		 	 <tr>
+			 	<th >
+			 	<form action="" method="get" id="wedding"name="gender" enctype="multipart/form-data">
+			   				미혼<input type="radio" id="wedding" name="wedding" value="">
+		 		</form>
+		 		</th>
+			 	<td colspan="3"></tb>
+	 		</tr>
+		 	
+		 	 <tr>
+			 	<th >좋아하는색</th>
+			 	<td colspan="3">
+			 		<form action="" method="get" id="color" name="corlor" enctype="multipart/form-data">
+			 			<input type="color" id="color" name="color" value=#00ffff>
+			 		</form>
+			 	</td>
+	 		</tr>
+
+		 	 <tr>
+			 	<th colspan="4">자기소개</th>
+ 			</tr>
+		 	
+		 	 <tr>
+			 	<td height="200px" colspan="4">
+			 		<form action="" method="get" id="" name="" enctype="multipart/form-data">
+			 			<center>
+						<textarea cols="80" rows="10">안녕하세요 저는 미키마우스라고 합니다 나이는 쏼라쏼라</textarea>
+					</center>
+		 			</form>
+			 	</td>
+ 			</tr>
+ 			
+ 			<tr>
+ 				<th rowspan="5">개인정보</th>
+ 				<th rowspan="2">모바일</th>
+ 				<td rowspan="2" width="200">
+ 					<form action="" method="pet" id="mobail"name="mobail" enctype="multipart/form-data" >
+			 			010-<input type="tel"id="mobail2"name="mobail2"maxlength="4" placeholder="숫자만입력하시오"
+			 				value="2222"size="4"> -
+		 				<input type="tel"id="mobail2"name="mobail1"maxlength="4" placeholder="숫자만입력하시오"
+			 				value="1234"size="4"> </td>
+		 			</form></td>
+ 				<th rowspan="4">정보제공동의</th>
+ 				<td>
+ 				<form action="" method="get" id="mobail"name="mobail" enctype="multipart/form-data">
+			   				동&nbsp;&nbsp;&nbsp;의<input type="radio" id="mobaill" name="mobail" value="y">
+				</form>
+ 				 </td>
+ 			</tr>
+ 			
+ 			<tr>
+ 				<td>
+ 				<form action="" method="get" id="mobail"name="mobail" enctype="multipart/form-data">
+			   				미동의<input type="radio" id="mobaill" name="mobail" value="n"checked>
+				</form>
+				</td>
+ 			</tr>
+ 			
+ 			<tr>
+ 				<th rowspan="2">이메일</th>
+ 				<td rowspan="2" >
+ 				<form action="" method="get" id="email" name="email" enctype="multipart/form-data">
+			 			<input type="eamil" id="email" name="email" value=miini@naver.com>
+			 		</form>
+ 				</td>
+ 				<td> 
+					<form action="" method="get" id="email"name="email" enctype="multipart/form-data">
+			   				동&nbsp;&nbsp;&nbsp;의<input type="radio" id="email" name="email" value="y"checked>
+	   				</form>
+   				</td>
+ 					
+ 			</tr>
+		 	
+			<tr>
+ 				<td>
+ 				<form action="" method="get" id="email"name="email" enctype="multipart/form-data">
+			   				미동의<input type="radio" id="email" name="email" value="n">
+ 				</form>
+ 				</td>
+ 			</tr>
+		 	
+			<tr>
+ 				<th>개인정보보관</th>
+ 				<td colspan="3"]>
+ 				<form action="" method="get" id="privacy"name="privacy" enctype="multipart/form-data">
+			   				1년<input type="radio" id="privacy" name="privacy" value="1" checked>
+			   				3년<input type="radio" id="privacy" name="privacy" value="3">
+			   				5년<input type="radio" id="privacy" name="privacy" value="5">
+			   				10년<input type="radio" id="privacy" name="privacy" value="10">
+ 				 	</form>
+ 				  </td>
+ 			</tr>
+		 	
+		 	
+		 	
+			 <tr>
+			 	<th rowspan="2">비밀번호찾기</th>
+			 	<th>힌트</th>
+			 	<th colspan="3>
+			 		<form action="" method="get" id="hint" name="hint" enctype="multipart/form-data">
+				
+				<select id="hint" name="hint"  >
+					<option selected>가장 좋아하는 음식은 무엇인가요? 
+					<option> 나의 보물 1호는 무엇인가요? 
+					<option> 부모님(아버지or어머니) 성함은 어떻게되나요? 
+					<option > 기억에 남는 장소는 어디인가요? 
+					<option > 가장 존경하는 분은 누구인가요? 
+					<option selected > 좋아하는 계절은 언제인가요? 
+			 	
+			 	</select>
+			 	</th>
+			 </tr>	
+			 
+			 <tr>
+				<th>답</th>
+		 	 	<th colspan="3">
+		 	 	<form action="" method="get" id="answer"name="answer" enctype="multipart/form-data" >
+			 			<input type="text"id="aneswer"name="answer"size="40" value="겨울"> </td>
+			 			</form>
+		 	 	</th>
+			 </tr>
+
+			 <tr>
+				<th colspan="2">추천인</th>
+		 	 	<th colspan="3">
+			 	 	<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+				 			<input type="text"id="pror"name="pro" value="mini">
+		 	 	</th>
+			 </tr>
+			 
+			 <>
+			 
+			 
+			 
+			</table>
+			
+			<br>
+			
+			<table border="1">
+			
+			<tr>
+					<th width="770px"colspan="5"> 프로젝트</th>
+		    	    					
+   			</tr>
+			
+			<tr>
+				<th>NO</th>
+				<th>프로젝트명</th>
+				<th>참여기간</th>
+				<th>역할</th>
+				<th>발주사</th>
+				
+				
+			
+			</tr>
+			<tr>
+		
+				<td>	1.</td>
+				<td>	
+					<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="prj_wodi"></td>
+				<td>
+					<form action="" method="get" id="pro1"name="pro1" enctype="multipart/form-data" >
+			 			<input month="text"id="pro1 "name="pro1" value="2019-01">부터
+		 				<br><input month="text"id="pro1 "name="pro1" value="2022-01">까지
+			 			</td>
+				<td>
+				<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="advise"></td>
+				<td>
+				<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="이젠IT"></td>
+					
+					
+			</tr>
+			<tr>
+		
+				<td>2.	</td>
+				<td>	
+					<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="prj_wodi"></td>
+				<td>
+					<form action="" method="get" id="pro1"name="pro1 enctype="multipart/form-data" >
+			 			<input month="text"id="pro1 "name="pro1" value="2019-01">부터
+		 				<br><input month="text"id="pro1 "name="pro1" value="2022-01">까지
+			 			</td>
+				<td>
+				<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="advise"></td>
+				<td>
+				<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="이젠IT"></td>
+					
+					
+			</tr>
+			<tr>
+		
+				<td>	3.</td>
+				<td>	
+					<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="prj_wodi"></td>
+				<td>
+					<form action="" method="get" id="pro1"name="pro1" enctype="multipart/form-data" >
+			 			<input month="text"id="pro1 "name="pro1" value="2019-01">부터
+		 				<br><input month="text"id="pro1 "name="pro1" value="2022-01">까지
+			 			</td>
+				<td>
+				<form action="" method="get" id="pro"name="pro" enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="advise"></td>
+				<td>
+				<form action="" method="get" id="pro"name="pro enctype="multipart/form-data" >
+			 			<input type="text"id="pror"name="pro" value="이젠IT"></td>
+					
+					
+			</tr>
+	
+			
+			</table>
+	<a href="././memberlist.html">목록</a>
+	</body>
+	
+</html>
+	
