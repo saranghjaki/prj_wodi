@@ -160,7 +160,7 @@ A
 					<td>
 						<div class="col-sm-6">
 							<input type="text" class="form-control" id="sample2_postcode"
-								placeholder="우편번호">
+								placeholder="우편번호" value="01255">
 						</div>
 					</td>
 					<td>					
@@ -172,67 +172,44 @@ A
 					</button>
 					
 					<!-- Modal -->
-					<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal fade" id="staticBackdrop" padding="10px" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
 					  <div class="modal-dialog">
 					    <div class="modal-content">
 					      <div class="modal-header">
 					        <h5 class="modal-title" id="staticBackdropLabel">주소검색</h5>
+					      <!-- add serch s -->
 					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					      </div>
-					      <div class="modal-body">
-					       
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"></button>
-					        <button type="button" class="btn btn-primary">Understood</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>	
-					
+					     </div>
+					     	<div class="input-group mb-3">
+							  <input type="text" class="form-control" placeholder="예)판교로역 235, 분당 주공" aria-label="Recipient's username" aria-describedby="button-addon2">
+							  <a class="btn btn-outline-secondary" type="button" id="button-addon2" href="https://map.naver.com/v5/?c=14134642.3293301,4505459.4940551,15,0,0,0,dh">검색</a>
+								</div>
+				     			 <div class="modal-body">
+					     			<p class="h1"><strong>tip<strong></p>
+					     		 	<span style="font-size: large">아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다</span>
+	    		 			     		 <hr><br>
+					     		 	<p class="h6">도로명+건물번호</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)판교로역 235, 제주 첨단로 242</span>
+					     		 	<p class="h6">지역명(동/리)+번지</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)상평동 681, 제주 영광동 2181</span>
+					     		 	<p class="h6">지역명(동/리)+번지</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)분당 주고 연수동 주공3차</span>
+					     		 	<p class="h6">사서함명+번호</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)분당우체국사서함 1-100</p></span>
+					     		 </div>
+					<div class="modal-footer">
 						
-						
-						<label for="button-addon1" class="form-label">주소</label>
-						<button class="btn btn-outline-secondary" type="button"
-							id="button-addon1" data-bs-toggle="modal"
-							data-bs-target="#exampleModal">주소 찾기</button>
+						<button type="button" class="btn btn-secondary"
+								data-bs-dismiss="modal">닫기</button>
 
-						<!--MODAL -->
-						<div class="modal fade" id="exampleModal" tabindex="-1"
-							aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>
-										<button type="button" class="btn-close"
-											data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<h3 style="text-align: center">주소 검색</h3>
-										<br> <br><div class="input-group mb-3"> <input
-											class="form-control form-control-lg" type="text"
-											placeholder="주소 입력"> <br>
-										<a href="https://map.naver.com/v5" class="btn btn-outline-secondary" role="button"
-											id="button-addon2">검색</a>
-									</div>
-									<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
-									<p>예) 건물명 : 방배동 우성아파트</p>
-									<p>도로명 : 테헤란로 152</p>
-									<p>지역번 : 역삼동 737</p>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary"
-										data-bs-dismiss="modal">닫기</button>
-									<button type="button" class="btn btn-primary">확인</button>
-								</div>
-							</div>
-						</div>
-					</div> <!-- MODAL END -->
+					</div>
+				</div>
+			</div>
+		</div>
+					
+					<!-- MODAL END -->
 						
-						
-						
-						
-												
+					
 						
 					
 					</td>
@@ -246,7 +223,7 @@ A
 					<td colspan="2">
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="sample2_address"
-								placeholder="주소">
+								placeholder="주소" value="서울시 강남구 테헤란로 25길 2">
 						</div>
 					</td>
 
@@ -257,7 +234,7 @@ A
 					<td colspan="2">
 						<div class="col-sm-10">
 							<input type="text" class="form-control"
-								id="sample2_detailAddress" placeholder="상세주소">
+								id="sample2_detailAddress" placeholder="상세주소"value="강남빌딩 8층">
 						</div>
 					</td>
 
@@ -278,7 +255,7 @@ A
 								id="exampleDataList" placeholder="힌글 또는 영어대문자로 입력">
 							<datalist id="datalistOptions">
 								<datalist id="datalistOptions">
-									<option value="AD">AD 안도라 ANDORRA
+									<option  value="AD">AD 안도라 ANDORRA
 									
 									<option value="AE">AE 아랍에미리트 UNITED ARAB EMIRATES
 									
@@ -536,7 +513,7 @@ A
 									
 									<option value="NK">북한 NORTH KOREA
 									
-									<option value="KR">대한민국 KOREA
+									<option value="KR" selected >대한민국 KOREA
 									
 									<option value="KV">KV 코소보 KOSOVO
 									
@@ -827,7 +804,7 @@ A
 								<option value="자영업">자영업</option>
 								<option value="주부">주부</option>
 								<option value="프리랜서">프리랜서</option>
-								<option value="예술인">예술인</option>
+								<option selected value="예술인">예술인</option>
 								<option value="학생">학생</option>
 								<option value="기타">
 									<!-- 자바배울때 기타에 입력창 되게끔 -->
@@ -843,7 +820,7 @@ A
 					<td colspan="2"><label for="exampleColorInput"
 						class="form-label">색을 선택하십시오</label> <input type="color"
 						class="form-control form-control-color" id="exampleColorInput"
-						value="#563d7c" title="Choose your color"></td>
+						value="#E47CD1" title="Choose your color"></td>
 
 				</tr>
 
@@ -855,8 +832,8 @@ A
 						 <label class="btn btn-outline-warning" for="warning-outlined">1인가구</label> 
 						 
 						<input type="radio" class="btn-check" name="famiiy"
-						id="warning2-outlined" autocomplete="off" value="3year"> 
-						<label class="btn btn-outline-warning" for="warning2-outlined">2인가구</label> 
+						id="warning2-outlined" autocomplete="off" value="3year" checked> 
+						<label class="btn btn-outline-warning" for="warning2-outlined" >2인가구</label> 
 						
 						<input type="radio" class="btn-check" name="famiiy"
 						id="warning3-outlined" autocomplete="off" value="5year"> 
@@ -883,9 +860,9 @@ A
 						</div>
 						<div class="form-check form-check-inline">
 						  <input class="form-check-input" type="radio" id="classic"
-								name="interior" value="typeclassic">
+								name="interior" value="typeclassic" checked>
 						  	<label class="form-check-label" for="classic">
-						  		<span class="badge rounded-pill bg-warning">클래식&앤틱</span>
+						  		<span class="badge rounded-pill bg-warning"checked>클래식&앤틱</span>
 						  	</label>
 						</div>
 						<div class="form-check form-check-inline">
@@ -957,12 +934,12 @@ A
 						</div> (
 						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox"
-								id="inlineCheckbox1" value="option1"> <label
+								id="inlineCheckbox1" value="option1" checked> <label
 								class="form-check-label" for="inlineCheckbox1">em</label>
 						</div>
 						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox"
-								id="inlineCheckbox2" value="option2"> <label
+								id="inlineCheckbox2" value="option2" checked> <label
 								class="form-check-label" for="inlineCheckbox2">sms</label>
 						</div>
 						<div class="form-check form-check-inline">
@@ -991,7 +968,7 @@ A
 					<th class="table-light">개인정보보관</th>
 					<td colspan="2">
 					<input type="radio" class="btn-check" name="pribecy"
-						id="warning8-outlined" autocomplete="off" value="1year">
+						id="warning8-outlined" autocomplete="off" value="1year" checked>
 						 <label class="btn btn-outline-warning" for="warning8-outlined">1년이하 </label> 
 						
 					<input type="radio" class="btn-check" name="pribecy"

@@ -145,19 +145,69 @@ A<!doctype html>
 					</tr>
 				</thead>
 
-				<tr>
+		<tr>
 					<th class="table-light" rowspan="3"><img
 						src="../../image/cherry.png" width="15px">주소</th>
-					<td colspan="2">
-						<div class="col-sm-5">
-							<input type="text" class="form-control" id="inputzip"
-								placeholder="우편번호">
+					<td>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="sample2_postcode"
+								placeholder="우편번호" >
 						</div>
 					</td>
+					<td>					
+					<div class="d-grid gap-2 col-3 mx-auto">
+							
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					  주소찾기
+					</button>
+					
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" padding="10px" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="staticBackdropLabel">주소검색</h5>
+					      <!-- add serch s -->
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					     </div>
+					     	<div class="input-group mb-3">
+							  <input type="text" class="form-control" placeholder="예)판교로역 235, 분당 주공" aria-label="Recipient's username" aria-describedby="button-addon2">
+							  <a class="btn btn-outline-secondary" type="button" id="button-addon2" href="https://map.naver.com/v5/?c=14134642.3293301,4505459.4940551,15,0,0,0,dh">검색</a>
+								</div>
+				     			 <div class="modal-body">
+					     			<p class="h1"><strong>tip<strong></p>
+					     		 	<span style="font-size: large">아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다</span>
+	    		 			     		 <hr><br>
+					     		 	<p class="h6">도로명+건물번호</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)판교로역 235, 제주 첨단로 242</span>
+					     		 	<p class="h6">지역명(동/리)+번지</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)상평동 681, 제주 영광동 2181</span>
+					     		 	<p class="h6">지역명(동/리)+번지</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)분당 주고 연수동 주공3차</span>
+					     		 	<p class="h6">사서함명+번호</p>
+					     		 	<span style="font-size: smaller" class="text-primary">예)분당우체국사서함 1-100</p></span>
+					     		 </div>
+					<div class="modal-footer">
+						
+						<button type="button" class="btn btn-secondary"
+								data-bs-dismiss="modal">닫기</button>
 
+					</div>
+				</div>
+			</div>
+		</div>
+					
+					<!-- MODAL END -->
+						
+					
+						
+					
+					</td>
+					
+
+				
 				</tr>
-
-				<tr>
 
 					<td colspan="2">
 						<div class="col-sm-10">
