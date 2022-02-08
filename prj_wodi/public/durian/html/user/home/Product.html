@@ -23,6 +23,33 @@
 			    padding-bottom: 20px;
 			    line-height: 1.2;
 			}
+			.video {
+		    position: relative;
+		    padding-bottom: 56.25%;
+		    height: 0;
+		    overflow: hidden;
+		    margin-bottom: 4em;
+		}
+			 .video iframe, 
+		/* .video object, */
+			.video embed {
+		    position: absolute;
+		    top: 7%;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		}
+		
+		
+		
+	 	.wrapper {
+		  max-width: 800px;
+		  margin-left: auto;
+		  margin-right: auto;
+		  padding: 1px 15px 1px;
+		} 
+	
+	
 			
 	
 		</style>
@@ -35,7 +62,7 @@
 	<!-- s -->
 	
 	<!--  로고 -->
-  <header>
+  <header  >
 	  <ul class="nav nav-tabs">
 	  <li class="nav-item">
 	    <a class="nav-link active" aria-current="page" href="#">EZEN HOME</a>
@@ -64,7 +91,7 @@
 					</div>
 	    
 	 <!--  메뉴바 -->
-		 <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+		 <nav  class="navbar navbar-expand-lg navbar-dark bg-danger">
 		  <div class="container-fluid">
 		    <a class="navbar-brand" href="#">홈메뉴</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" >
@@ -81,9 +108,9 @@
 		          </a>
 		          <ul class="dropdown-menu dropdown-menu-danger" >
 		            <li><a class="dropdown-item" href="./memberList.html">중문</a></li>
-		            <li><a class="dropdown-item" href="./memberEdit.html"></a></li>
-		            <li><a class="dropdown-item" href="./memberForm.html"></a></li>
-		            <li><a class="dropdown-item" href="./memberView.html"></a></li>
+		            <li><a class="dropdown-item" href="./memberEdit.html">자동중문</a></li>
+		            <li><a class="dropdown-item" href="./memberForm.html">수동중문</a></li>
+		           
 		          </ul>
 		          </li>
 		          <li class="nav-item">
@@ -112,6 +139,37 @@
 		</nav>
 	</header>
 	
+	<div class="wrapper">
+		<!-- <h1>3연동 자동중문</h1> -->
+		<div class="video">
+		<iframe src="https://www.youtube.com/embed/4Ga6ucBFcGI"
+		 width="640" height="360" frameborder="0"></iframe> 
+		</div>
+		
+		</div>
+
+
+
+	<div class="card-group">
+	  <div class="card">
+	    <img src="../../../images/user/home/auto3Door2.jpg" class="card-img-top" alt="...">
+	    <div class="card-body">
+	      <h5 class="card-title">3연동 자동중문</h5>
+	      <p class="card-text">높음 개방감과 심미성을 갖춘 3연동 도어에, 자동 여/닫힘 기능을 담은 제품</p>
+	      <p class="card-text"><small class="text-muted">자주드나 드는 공간,손을 사용하기 번거러운 환경, 지속적인 개폐로 단열이 필요한 곳에 추천합니다.</small></p>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <img src="../../../images/user/home/auto3Door2.jpg" class="card-img-top" alt="...">
+	    <div class="card-body">
+	      <h5 class="card-title">3연동 자동중문</h5>
+	      <p class="card-text">높음 개방감과 심미성을 갖춘 3연동 도어에, 자동 여/닫힘 기능을 담은 제품</p>
+	      <p class="card-text"><small class="text-muted">자주드나 드는 공간,손을 사용하기 번거러운 환경, 지속적인 개폐로 단열이 필요한 곳에 추천합니다.</small></p>
+	    </div>
+	  </div>
+	  
+	</div>
+		
 	
 	
 	

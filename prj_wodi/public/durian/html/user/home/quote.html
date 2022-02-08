@@ -23,6 +23,8 @@
 			    padding-bottom: 20px;
 			    line-height: 1.2;
 			}
+		
+	
 			
 	
 		</style>
@@ -35,7 +37,7 @@
 	<!-- s -->
 	
 	<!--  로고 -->
-  <header>
+  <header  >
 	  <ul class="nav nav-tabs">
 	  <li class="nav-item">
 	    <a class="nav-link active" aria-current="page" href="#">EZEN HOME</a>
@@ -64,7 +66,7 @@
 					</div>
 	    
 	 <!--  메뉴바 -->
-		 <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+		 <nav  class="navbar navbar-expand-lg navbar-dark bg-danger">
 		  <div class="container-fluid">
 		    <a class="navbar-brand" href="#">홈메뉴</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" >
@@ -81,9 +83,9 @@
 		          </a>
 		          <ul class="dropdown-menu dropdown-menu-danger" >
 		            <li><a class="dropdown-item" href="./memberList.html">중문</a></li>
-		            <li><a class="dropdown-item" href="./memberEdit.html"></a></li>
-		            <li><a class="dropdown-item" href="./memberForm.html"></a></li>
-		            <li><a class="dropdown-item" href="./memberView.html"></a></li>
+		            <li><a class="dropdown-item" href="./memberEdit.html">자동중문</a></li>
+		            <li><a class="dropdown-item" href="./memberForm.html">수동중문</a></li>
+		           
 		          </ul>
 		          </li>
 		          <li class="nav-item">
@@ -112,6 +114,78 @@
 		</nav>
 	</header>
 	
+		<p class="fs-3">중문종류 및 수량</p>
+			<p>
+			  <a class="btn btn-danger backdrop"data-bs-toggle="collapse" href="#collapseExample" role="button" >
+			    자동중문
+			  </a>
+			 
+			</p>
+			<div class="collapse" id="collapseExample">
+			  <div class="card card-body">
+			   <p> 3연동 자동중문</p>
+			    <p>원슬라이딩 자동중문</p>
+				    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+	 				  <button class="btn btn-primary" type="button">확인</button>
+					</div>
+			  </div>
+				</div>
+			
+			<p>
+			
+			  <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample1" role="button"  >
+			    수동중문
+			  </a>
+			</p>
+		
+			<div class="collapse" id="collapseExample1">
+			  <div class="card card-body">
+			   <p> 3연동 자동중문</p>
+			   <p> 원슬라이딩도어 :</p>
+			     <div class="updown">
+
+                    <input type="text" name="p_num1" id="p_num1" size="0" maxlength="99" class="p_num" >
+                    <span><i class="fas fa-arrow-alt-circle-up up"></i></span>
+                    <span><i class="fas fa-arrow-alt-circle-down down"></i></span>
+				  </div>
+				
+			    <p>원슬라이딩 양개도어</p>
+			    <p>3연동도어</p>
+			    <p>스윙도어</p>
+			    <p>50mm 프레임도어</p>
+			    <p>80mm 프레임도어</p>
+			    	 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+	 				  <button class="btn btn-primary" type="button">확인</button>
+					</div>
+			   </div> 
+			   </div>
+			  
+			
+			<p class="fs-3">옵션</p>
+				 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+ 				  <button class="btn btn-primary" type="button">확인</button>
+				</div>
+	
+		<!-- 견적확인버튼 -->
+		<button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">예상견적확인</button>
+
+		<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+		  <div class="offcanvas-header">
+		    <h5 class="offcanvas-title fw-bold" id="offcanvasBottomLabel">예상견적 00원</h5>
+		    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		  </div>
+		  <div class="offcanvas-body small">
+		    
+		    	<p class="fw-bolder">중문 </p>
+				<p class="fw-normal">선택한중문 * 수량  00원</p>
+				<p class="fw-bolder">옵션 </p>
+				<p class="fw-normal">선택한옵션 * 수량  00원</p>
+				<p class="fw-normal">선택한옵션 * 수량  00원</p>
+				
+		    
+		  </div>
+		</div>
+		
 	
 	
 	
