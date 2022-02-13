@@ -1,2 +1,535 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" >
+	
+    <!-- Bootstrap CSS -->
+ <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  -->
+	
+	<link href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" >
+		
+	<script src="https://kit.fontawesome.com/916f7eb38d.js" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="/resources/js/bootstrap.js"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<style type= text/css>
+		a:link {
+		  color : pink;
+		}
+		a:visited {
+		  color : black;
+		}
+		a:hover {
+		  color : red;
+		}
+		a:active {
+		  color : green
+		}
+		table {
+		  width: 50%;
+		}
+		
+		body{
+			font-size:12px
+		}
+
+	</style> 
+
+	    <title>IzenMoonfactory</title>
+  </head>
+  
+ <body  >
+
+	
+	<div class="container justify-content-center ">
+	  <div class="row row-sm-12 mt-2  ">
+	    <div id ="mainline" class="col p-0">
+	       <a class="p-0 nav-link active" aria-current="page" href="# ">
+	       <p style="font-size:3vmin; text-align :center">로그인</p> </a>
+	    </div>
+	    <div id ="mainline"  class="col p-0">
+	     <a class=" p-0 nav-link" href="">
+	     <p style=" font-size:3vmin; text-align :center">회원가입</p> </a>
+	    </div>
+	    <div id ="mainline"  class="col p-0 ">
+	       <a class=" p-0 nav-link" href="#">
+	       <p style="font-size:3vmin; text-align :center">수업예약</p> </a>
+	    </div>
+	    <div id ="mainline"  class="col p-0">
+	       <a class=" p-0 nav-link" href="#">
+	       <p style="font-size:3vmin; text-align :center">수업결재</p></a>
+	    </div>
+	  </div>
+	</div>
+	
+	
+	<!-- nav s -->
+	
+	<nav class="navbar navbar-light bg-light sticky-top h-25 d-inline-block w-100 mb-5">
+	  <div class="container-fluid">
+	  	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	       <p class="text-center fw-bold fs-2">  PILATES SU </p>
+	      
+	    <a class="navbar-brand p-0 fs-1em mt-3  mr-0  ml-3 " href="#">
+	    	<p style="font-size:2vmin; ">김땡땡님</p>
+	    </a>
+
+	    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	      <div class="offcanvas-header">
+	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">pilates su</h5>
+	        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	      </div>
+	      <div class="offcanvas-body">
+	       
+	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+	        	 <li ><img src="../../../images/xdmin/member/people.jpg" width=50em style="vertical-align:middle">
+	        	  <span style="margin-top:20px;font-size:1em;" > 로그인이필요합니다</span>
+	        	 </i>
+	        	 <li>
+	        	 	<div class="container justify-content-center">
+					  <div class="row row-sm-12 mt-2  p-0 ">
+					    <div id ="mainline" class="col p-0">
+					       <a class="p-0 nav-link active" aria-current="page" href="# ">
+					       <p style="font-size:3vmin; text-align :center">로그인</p> </a>
+					    </div>
+					    <div id ="mainline"  class="col p-0">
+					     <a class=" p-0 nav-link" href="#">
+					     <p style=" font-size:3vmin; text-align :center">회원가입</p> </a>
+					    </div>
+				  <li class="fw-bolder">
+				  	<span>만료일 D-00일</span>
+				  	<span>남은횟수 00회</span>
+				  </li>	
+		          <li class="nav-item">
+		            <a class="nav-link active" aria-current="page" href="#"></a>
+		          </li>
+		          <li class="nav-item" >
+		            <a class="row-ml-3 nav-link" href="#">센터소개</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">수업결재</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">예약관리</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">공지사항</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#">문의사항</a>
+		          </li>
+	        	  <li class="nav-item dropdown">
+		            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		              Dropdown
+		            </a>
+		            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+		              <li><a class="dropdown-item" href="#">Action</a></li>
+		              <li><a class="dropdown-item" href="#">Another action</a></li>
+		              <li>
+		                <hr class="dropdown-divider">
+		              </li>
+		              <li><a class="dropdown-item" href="#">Something else here</a></li>
+		            </ul>
+		          </li>
+		        </ul> 
+		        <form class="d-flex">
+		          <input class="form-control me-2" type="search" placeholder="필라테스" aria-label="Search">
+		          <button class="btn btn-outline-success" type="submit">검색</button>
+		        </form>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+
+
+		<div class="container ">
+		 	<table class="table table-bordered table-lg ">
+				<colgroup>
+					<col width="100%"/>
+				</colgroup>	
+				<tr class="table-light ">
+					<th>회원인증 </th>
+				</tr>
+				<tr>
+					<td>
+						<div class="form-check">
+					  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+					  <label class="form-check-label" for="flexRadioDefault1">
+				   개인회원
+				  </label>
+				 </td>
+				<tr>
+			</table>
+		</div>
+	
+		<div class="container ">
+			<table class="table table-bordered table-lg ">
+				<colgroup>
+					<col width="40%"/>	
+					<col width="60%"/>
+				</colgroup>		
+				<tr class="table-light ">
+					<th colspan="2">기본정보 </th>
+				</tr>
+				<tr>
+					<td>아이디</td>
+					<td>
+						<div class="input-group mb-3 ">
+							<div class="col-sm-7 col-md-8">
+								<input class="form-control form-control-sm" type="text">
+							</div>
+							<div class="col-sm-5 col-md-4">
+								<button class="btn btn-outline-secondary"  type="button" id="button-addon2">중복확인</button>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td>
+						<div class="input-group mb-3 ">
+							<div class="col-sm-7 col-md-8">
+								<input class="form-control form-control-sm" type="password">
+							</div>
+						</div>	
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호 확인</td>
+					<td>
+						<div class="input-group mb-3 ">
+							<div class="col-sm-7 col-md-8">
+								<input class="form-control form-control-sm" type="password">
+							</div>
+						</div>	
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호 확인 질문</td>
+					<td>
+							<div class="input-group mb-3">
+								<select class=" form-select dropdown-toggle" "  data-toggle="dropdown" >
+									<div class=" dropdown-menu  col-sm-12 col-md-12 " aria-labelledby="dropdownmenu">
+								     	<option value="1" selected>좋아하는 캐릭터?</option> 
+									 	<option value="2">가고 싶은 나라는?</p></option>
+									 	<option value="3">좋아하는 음식은?</option>
+									 	<option value="4">좋아하는 연예인은?</option>
+									 	<option value="5">존경하는 분은?</option>
+									 	<option value="6">친한 친구는?</option>
+									 </div> 
+								 </div>
+							</select> 
+					
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호 확인 답변</td>
+					<td>
+						<div class="input-group mb-3 ">
+							<div class="col-sm-12 col-md-12">
+								<input class="form-control form-control-sm" type="text">
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>이름</td>
+					<td>
+						<div class="input-group mb-3 ">
+							<div class="col-sm-7 col-md-8">
+								<input class="form-control form-control-sm" type="text">
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="3">주소</td>
+					<td>
+						<div class="input-group mb-3 ">
+							<div class="col-sm-7 col-md-8">
+								<input class="form-control form-control-sm" type="text">
+							</div>
+							<div class="col-sm-5 col-md-4">
+								<button class="btn btn-outline-secondary"  type="button" id="button-addon2">주소검색</button>
+							</div>
+						</div>	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="form-control form-control-sm" type="text">
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<input class="form-control form-control-sm"   placeholder="상세주소" type="text">
+					</td>
+				</tr>
+				<tr>
+					<td>일반전화</td>
+					<td>
+						<div class="input-group mb-2">
+								<select  class=" form-select dropdown-toggle" "  data-toggle="dropdown" >
+									<div class=" dropdown-menu col-cols-5 col-md-4 " aria-labelledby="dropdownmenu">
+								     	<option value="1" selected>02</option> 
+									 	<option value="2">031</p></option>
+									 	<option value="3">032</option>
+									 	<option value="4">033</option>
+									 	<option value="5">041</option>
+									 	<option value="6">042</option>
+									 	<option value="7">042</option>
+									 	<option value="8">043</option>
+									 	<option value="9">051</option>
+									 	<option value="10">052</option>
+									 	<option value="11">053</option>
+									 	<option value="12">054</option>
+									 	<option value="13">055</option>
+									 	<option value="14">061</option>
+									 	<option value="15">062</option>
+									 	<option value="16">062</option>
+									 	<option value="17">063</option>
+									 	<option value="18">064</option>
+									 	<option value="19">직접입력</option>
+									 </div> 
+								 </div>
+							 </select> 
+								<div class="col-cols-9 col-md-8">
+								  	<input type="text" class="  form-control" aria-label="Text input with dropdown button">
+								</div>
+							</div>
+						</div>	
+					</td>
+				</tr>
+				<tr>
+					<td>휴대전화</td>
+					<td>
+						<div class="input-group mb-2">
+							<select  class=" form-select dropdown-toggle" "  data-toggle="dropdown" >
+								<div class=" dropdown-menu col-cols-5 col-md-4 " aria-labelledby="dropdownmenu">
+							     	<option value="1" selected>010</option> 
+								 	<option value="2">011</p></option>
+								 	<option value="3">016</option>
+								 	<option value="4">017</option>
+								 	<option value="5">018</option>
+								 	<option value="6">019</option>
+								   </div> 
+								 </div>
+							</select> 
+							<div class="col-cols-9 col-md-8">
+							  	<input  type="text" class=" form-control" aria-label="Text input with dropdown button">
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>이메일</td>
+					<td>
+						<input class="form-control form-control-sm" type="text">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="container ">
+			<table class="table table-bordered table-lg ">
+				<colgroup>
+					<col width="40%"/>	
+					<col width="60%"/>
+				</colgroup>	
+				<tr class="table-light ">
+					<th colspan="2">주소</th>
+				</tr>
+				<tr>
+					<td>생년월일 </td>
+					<td>
+				<div class="container">
+  					<div class="row row-cols-1 row-md-3">
+							<input class="form-control col-sm-4" list="datalistOptions" id="exampleDataList" placeholder="생년입력">
+								<datalist id="datalistOptions">
+								  <option value="1920">
+								  <option value="1921">
+								  <option value="1922">
+								  <option value="1923">
+								  <option value="1924">
+								  <option value="1925">
+								  <option value="1926">
+								  <option value="1927">
+								  <option value="1928">
+								  <option value="1929">
+								  <option value="1930">
+								  <option value="1930">
+								  <option value="1931">
+								  <option value="1932">
+								  <option value="1933">
+								  <option value="1934">
+								  <option value="1935">
+								  <option value="1936">
+								  <option value="1937">
+								  <option value="1938">
+								  <option value="1939">
+								  <option value="1940">
+								  <option value="1941">
+								  <option value="1942">
+								  <option value="1943">
+								  <option value="1944">
+								  <option value="1945">
+								  <option value="1946">
+								  <option value="1947">
+								  <option value="1948">
+								  <option value="1949">
+								  <option value="1950">
+								  <option value="1951">
+								  <option value="1952">
+								  <option value="1953">
+								  <option value="1954">
+								  <option value="1955">
+								  <option value="1956">
+								  <option value="1957">
+								  <option value="1958">
+								  <option value="1959">
+								  <option value="1960">
+								  <option value="1961">
+								  <option value="1962">
+								  <option value="1963">
+								  <option value="1964">
+								  <option value="1965">
+								  <option value="1966">
+								  <option value="1967">
+								  <option value="1968">
+								  <option value="1969">
+								  <option value="1970">
+								  <option value="1971">
+								  <option value="1972">
+								  <option value="1973">
+								  <option value="1974">
+								  <option value="1975">
+								  <option value="1976">
+								  <option value="1977">
+								  <option value="1978">
+								  <option value="1979">
+								  <option value="1980">
+								  <option value="1981">
+								  <option value="1982">
+								  <option value="1983">
+								  <option value="1984">
+								  <option value="1985">
+								  <option value="1986">
+								  <option value="1987">
+								  <option value="1988">
+								  <option value="1989">
+								  <option value="1990">
+								  <option value="1991">
+								  <option value="1992">
+								  <option value="1993">
+								  <option value="1994">
+								  <option value="1995">
+								  <option value="1996">
+								  <option value="1997">
+								  <option value="1998">
+								  <option value="1999">
+								  <option value="2000">
+								  <option value="2001">
+								  <option value="2002">
+								  <option value="2003">
+								  <option value="2004">
+								  <option value="2005">
+								  <option value="2006">
+								  <option value="2007">
+								  <option value="2008">
+								  <option value="2009">
+								  <option value="2010">
+								  <option value="2011">
+								  <option value="2012">
+								  <option value="2013">
+								  <option value="2014">
+								  <option value="2015">
+								  <option value="2016">
+								  <option value="2017">
+								  <option value="2018">
+								  <option value="2019">
+								  <option value="2020">
+								  <option value="2021">
+								  <option value="2022">
+								</datalist>
+						 
+							<select class=" form-select dropdown-toggle" "  data-toggle="dropdown" >
+								<div class=" dropdown-menu  col-sm-4  " aria-labelledby="dropdownmenu">
+							     	<option value="1" selected>01</option> 
+								 	<option value="2">02</p></option>
+								 	<option value="3">03</option>
+								 	<option value="4">04</option>
+								 	<option value="5">05</option>
+								 	<option value="6">06</option>
+								 	<option value="7">07</option>
+								 	<option value="8">08</option>
+								 	<option value="9">09</option>
+								 	<option value="10">10</option>
+								 	<option value="11">11</option>
+								 	<option value="12">12</option>
+								 </div> 
+								 </div>
+							</select> 
+							<select class=" form-select dropdown-toggle" "  data-toggle="dropdown" >
+								<div class=" dropdown-menu  col-sm-4  " aria-labelledby="dropdownmenu">
+							     	<option value="1" selected>01</option> 
+								 	<option value="2">02</p></option>
+								 	<option value="3">03</option>
+								 	<option value="4">04</option>
+								 	<option value="5">05</option>
+								 	<option value="6">06</option>
+								 	<option value="7">07</option>
+								 	<option value="8">08</option>
+								 	<option value="9">09</option>
+								 	<option value="10">10</option>
+								 	<option value="11">11</option>
+								 	<option value="12">12</option>
+								 	<option value="13">13</option>
+								 	<option value="14">14</option>
+								 	<option value="15">15</option>
+								 	<option value="16">16</option>
+								 	<option value="17">17</option>
+								 	<option value="18">18</option>
+								 	<option value="19">19</option>
+								 	<option value="20">20</option>
+								 	<option value="21">21</option>
+								 	<option value="22">22</option>
+								 	<option value="23">23</option>
+								 	<option value="24">24</option>
+								 	<option value="25">25</option>
+								 	<option value="26">26</option>
+								 	<option value="27">27</option>
+								 	<option value="28">28</option>
+								 	<option value="29">29</option>
+								 	<option value="30">30</option>
+								 	<option value="31">31</option>
+								 </div> 
+							 </div>
+						</select> 
+					</td>
+				<tr>
+			</table>
+		</div>		
+	
+				
+		  
+    <!-- e -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+	
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+	<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.min.js" ></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
